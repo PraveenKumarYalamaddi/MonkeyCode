@@ -1,4 +1,4 @@
-package hr.tz.code.challenge;
+package yp.hr.tz.code.challenge;
 
 import java.util.Scanner;
 
