@@ -1,4 +1,4 @@
-package yp.hr.tz.code.challenge;
+package yp.hr.thirty.days.of.code;
 
 import java.util.Scanner;
 

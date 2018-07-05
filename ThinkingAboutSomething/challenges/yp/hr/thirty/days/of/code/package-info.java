@@ -9,4 +9,4 @@
  * This will have day wise classes and challenges
  *
  */
-package yp.hr.tz.code.challenge;
+package yp.hr.thirty.days.of.code;
