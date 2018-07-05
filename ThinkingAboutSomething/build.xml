@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="ThinkingAboutSomething">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="ThinkingAboutSomething.classpath">
+        <pathelement location="bin"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="challenges">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="deepDiveIntoAlgos">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="challenges"/>
+            <src path="deepDiveIntoAlgos"/>
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="BubbleSortImpl">
+        <java classname="yp.algo.deep.dive.BubbleSortImpl" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day0HelloWorld">
+        <java classname="yp.hr.thirty.days.of.code.Day0HelloWorld" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day10BinaryNumbers">
+        <java classname="yp.hr.thirty.days.of.code.Day10BinaryNumbers" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day11Arrays2D">
+        <java classname="yp.hr.thirty.days.of.code.Day11Arrays2D" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day12Inheritance">
+        <java classname="yp.hr.thirty.days.of.code.Day12Inheritance" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day14Scope">
+        <java classname="yp.hr.thirty.days.of.code.Day14Scope" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day15LinkedList">
+        <java classname="yp.hr.thirty.days.of.code.Day15LinkedList" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day17MoreExceptions">
+        <java classname="yp.hr.thirty.days.of.code.Day17MoreExceptions" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day1DataTypes">
+        <java classname="yp.hr.thirty.days.of.code.Day1DataTypes" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day21Generics">
+        <java classname="yp.hr.thirty.days.of.code.Day21Generics" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day22BinarySearchTrees">
+        <java classname="yp.hr.thirty.days.of.code.Day22BinarySearchTrees" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day23BSTLevelOrderTraversal">
+        <java classname="yp.hr.thirty.days.of.code.Day23BSTLevelOrderTraversal" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day24MoreLinkedLists">
+        <java classname="yp.hr.thirty.days.of.code.Day24MoreLinkedLists" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day25RunningTimeandComplexity">
+        <java classname="yp.hr.thirty.days.of.code.Day25RunningTimeandComplexity" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day26NestedLogic">
+        <java classname="yp.hr.thirty.days.of.code.Day26NestedLogic" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day2Operators">
+        <java classname="yp.hr.thirty.days.of.code.Day2Operators" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day3IntroToConditionalStatements">
+        <java classname="yp.hr.thirty.days.of.code.Day3IntroToConditionalStatements" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day4ClassVsInstance">
+        <java classname="yp.hr.thirty.days.of.code.Day4ClassVsInstance" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day5Loops">
+        <java classname="yp.hr.thirty.days.of.code.Day5Loops" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day6LetsReview">
+        <java classname="yp.hr.thirty.days.of.code.Day6LetsReview" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day7Arrays">
+        <java classname="yp.hr.thirty.days.of.code.Day7Arrays" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day8DictionariesAndMaps">
+        <java classname="yp.hr.thirty.days.of.code.Day8DictionariesAndMaps" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Day9Recursion3">
+        <java classname="yp.hr.thirty.days.of.code.Day9Recursion3" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="InsertionSortImpl">
+        <java classname="yp.algo.deep.dive.InsertionSortImpl" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="PrintTriangle">
+        <java classname="PrintTriangle" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="SelectionSortImpl">
+        <java classname="yp.algo.deep.dive.SelectionSortImpl" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Solution">
+        <java classname="Solution" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+    <target name="Test">
+        <java classname="Test" failonerror="true" fork="yes">
+            <classpath refid="ThinkingAboutSomething.classpath"/>
+        </java>
+    </target>
+	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+    	    <mkdir dir="WebContent/WEB-INF/classes"/>
+      	    <copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+   	            <fileset dir="build/classes">
+   	            <include name="**/*.class"/>
+   	            </fileset>
+       	    </copy>
+   	    <war destfile="MonkeyCode_Build.war"
+	         basedir="WebContent"
+             needxmlfile="false">
+        </war>
+     </target>
+</project>
