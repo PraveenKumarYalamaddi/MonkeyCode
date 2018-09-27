@@ -11,8 +11,10 @@ public class SerializationExample {
 		/**
 		 * Object to serialize
 		 */
-		SerializableObject so = new SerializableObject();
-		
+		ChildClassObject so = new ChildClassObject();
+		so.p= "Y";
+		so.y= "P";
+		so.i = 200;
 		/**
 		 * Serialization Part
 		 */
@@ -26,9 +28,9 @@ public class SerializationExample {
 		 */
 		FileInputStream fis = new FileInputStream("sre.ydp");
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		SerializableObject sso = (SerializableObject)ois.readObject();
+		ChildClassObject sso = (ChildClassObject)ois.readObject();
 		ois.close();
-		System.out.println(sso.y +" "+sso.p);
+		System.out.println(sso.y +" "+sso.p +sso.i+"--"+sso.j);
 
 	}
 
