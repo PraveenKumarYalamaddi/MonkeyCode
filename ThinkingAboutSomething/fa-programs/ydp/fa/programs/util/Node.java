@@ -1,4 +1,4 @@
-package ydp.fa.programs;
+package ydp.fa.programs.util;
 
 public class Node {
 	

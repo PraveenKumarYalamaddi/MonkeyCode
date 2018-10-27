@@ -1,5 +1,7 @@
 package ydp.fa.programs;
 
+import ydp.fa.programs.util.Node;
+
 public class BinarySubTree {
 	Node root1,root2;
 	
